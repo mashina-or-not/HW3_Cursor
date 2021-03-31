@@ -12,6 +12,7 @@ public class Triangle extends PlaneShape {
 
     public Triangle(Vertex2D a, Vertex2D b, Vertex2D c) {
         this.vertices = new Vertex2D[]{a, b, c};
+        triangleDistance();
     }
 
     @Override
@@ -25,7 +26,7 @@ public class Triangle extends PlaneShape {
         return ab + bc + ac;
     }
 
-    private void TriangleDistance() {
+    private void triangleDistance() {
         ab = vertices[0].getDistance(vertices[1]);
         bc = vertices[1].getDistance(vertices[2]);
         ac = vertices[2].getDistance(vertices[0]);

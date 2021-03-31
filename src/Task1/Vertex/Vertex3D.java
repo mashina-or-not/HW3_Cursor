@@ -14,7 +14,7 @@ public class Vertex3D extends Vertex2D {
 
     @Override
     public String toString() {
-        return "Vertex2D {" +
+        return "Vertex3D {" +
                 "x = " + getX() +
                 ", y = " + getY() +
                 ", z = " + z +
